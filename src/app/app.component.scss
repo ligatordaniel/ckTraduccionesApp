@@ -1,0 +1,40 @@
+@media (orientation: portrait) {
+  .carrousel{
+    max-width: 100%;
+    margin-top: 5%;
+  }
+  .player{
+    max-width: 100%;
+    margin-top: 20%;
+  }
+}
+@media (orientation: landscape) {
+  .carrousel{
+    max-width: 50%;
+  }
+  .player{
+    max-width: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1000px) {   //comportamiento pantalla grande
+  .player {
+    margin-top: 15%;
+  }
+  .appGeneralSetting{
+    height: 100vh;
+    max-height: 100%;
+    background-color: rgb(49, 49, 49);
+  }
+}
+
+.myComponentsSettings{
+  margin-top: 4%;
+}
+
+.appGeneralSetting{
+  height: 100vh;
+  max-height: 100%;
+}
