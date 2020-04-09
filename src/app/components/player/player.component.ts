@@ -9,37 +9,14 @@ export class PlayerComponent implements OnInit {
 
   showPlayButton = true;  /*para crear el toggle de play y stop*/
   showStopButton = false; /*para crear el toggle de play y stop*/
-  url = '';
+  url = '//190.96.82.67:8000/stream';
+
 
   constructor() {
-   /* onPlay() {
-      this.url.playButton
-    } */
+
   }
 
   ngOnInit(): void {
   }
 
 }
-
-/*
-const functions = require('firebase-functions');
-const https = require('https');
-const info = functions.config().info;
-
-exports.cronHandler = functions.pubsub.topic('minutely-tick').onPublish((event) => {
-    return new Promise((resolve, reject) => {
-        const hostname = info.hostname;
-        const pathname = info.pathname;
-        let data = '';
-        const request = https.get(`https://${hostname}${pathname}`, (res) => {
-            res.on('data', (d) => {
-                data += d;
-            });
-            res.on('end', resolve);
-        });
-        request.on('error', reject);
-    });
-});
-
-*/
