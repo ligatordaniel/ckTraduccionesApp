@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayerComponent } from './components/player/player.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -14,7 +14,7 @@ import { environment } from '../environments/environment';
     AppComponent,
     PlayerComponent,
     CarrouselComponent,
-    FooterComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
