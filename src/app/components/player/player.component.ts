@@ -9,7 +9,7 @@ export class PlayerComponent implements OnInit {
 
   showPlayButton = true;  /*para crear el toggle de play y stop*/
   showStopButton = false; /*para crear el toggle de play y stop*/
-  url = '//190.96.82.67:8000/stream';
+  url = 'https://av03.upstream-media.ch/canal3francais-192.mp3';
 
 
   constructor() {
