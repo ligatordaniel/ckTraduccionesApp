@@ -1,0 +1,37 @@
+.codePassSettings{
+  background-color: rgb(81, 75, 158);
+  padding: 2%;
+  width: 400px;
+  max-width: 80%;
+  max-height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+  margin-top: 20vh;
+  box-shadow: 2px 2px 7px 2px #bebebe;
+}
+
+.slide-top{
+  animation:slide-top 1s cubic-bezier(.25,.46,.45,.94);
+  @keyframes slide-top {
+    0% {
+      transform: translateY(200px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+.btn {       /*centrar*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+

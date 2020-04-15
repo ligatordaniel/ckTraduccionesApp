@@ -3,22 +3,34 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { PlayerComponent } from './components/player/player.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { CodepassComponent } from './components/codepass/codepass.component';
+import { Cliente001Component } from './canales/cliente001/cliente001.component';
+import { Cliente002Component } from './canales/cliente002/cliente002.component';
+import { Cliente003Component } from './canales/cliente003/cliente003.component';
+
+import { FormsModule } from '@angular/forms';   /*agregamos este para usar ng-module y importamos*/
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerComponent,
     CarrouselComponent,
-    HeaderComponent
+    HeaderComponent,
+    CodepassComponent,
+    Cliente001Component,
+    Cliente002Component,
+    Cliente003Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

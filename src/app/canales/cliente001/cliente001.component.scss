@@ -1,0 +1,42 @@
+@media (orientation: portrait) {
+  .carrousel{
+    max-width: 100%;
+    margin-top: 5%;
+  }
+  .player{
+    max-width: 100%;
+    margin-top: 20%;
+  }
+}
+@media (orientation: landscape) {
+  .carrousel{
+    max-width: 50%;
+  }
+  .player{
+    max-width: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1000px) {   //comportamiento pantalla grande
+  .player {
+    margin-top: 15%;
+  }
+}
+
+.myClientSettings{
+  margin-top: 4%;
+}
+
+.slide-top{
+  animation:slide-top 1s cubic-bezier(.25,.46,.45,.94);
+  @keyframes slide-top {
+    0% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
