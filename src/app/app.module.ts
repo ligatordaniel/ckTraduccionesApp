@@ -14,7 +14,8 @@ import { Cliente001Component } from './canales/cliente001/cliente001.component';
 import { Cliente002Component } from './canales/cliente002/cliente002.component';
 import { Cliente003Component } from './canales/cliente003/cliente003.component';
 
-import { FormsModule } from '@angular/forms';   /*agregamos este para usar ng-module y importamos*/
+import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';   /*agregamos este para usar ng-module y importamos*/
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';   /*agregamos este para usar ng-mo
     CodepassComponent,
     Cliente001Component,
     Cliente002Component,
-    Cliente003Component
+    Cliente003Component,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

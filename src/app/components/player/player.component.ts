@@ -9,7 +9,10 @@ export class PlayerComponent implements OnInit {
 
   showPlayButton = true;  /*para crear el toggle de play y stop*/
   showStopButton = false; /*para crear el toggle de play y stop*/
-  url = 'https://190.96.82.67:8000/stream';
+  /*url = 'https://radio.cloudserver.cl:7035/stream';*/   /*mi streming*/
+  /*url = 'https://radio.acktib.com:8443/radio.ogg';*/   /*otro streming*/
+  url = 'https://radio.acktib.com:8443/radio.ogg';   /*otro streming*/
+
 
 
   constructor() {

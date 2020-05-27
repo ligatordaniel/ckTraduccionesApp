@@ -5,14 +5,12 @@
 
 <div class="divBoton">
   <audio id="demo"  src="{{url}}"
-  preload="auto"
   type="audio/mpeg"></audio>
 
   <button *ngIf="showPlayButton"
   (click)="showPlayButton=!showPlayButton; showStopButton=!showStopButton;"
   type="button" class="btn btn-outline-info btn-lg btn-circle playButton"
-  onclick="document.getElementById('demo').play()"
-  >
+  onclick="document.getElementById('demo').play()">
   <i class="material-icons md-48">play_arrow</i>
   </button>
 
